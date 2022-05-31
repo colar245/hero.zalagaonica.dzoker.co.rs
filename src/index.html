@@ -24,7 +24,11 @@
               <li><a href="#" data-text="drugo">drugo</a></li>
             </ul>
           </section>
-          <div class="j-card col-4">
+          <div
+            class="j-card col-4"
+            data-tilt-max-glare="0.8"
+            data-tilt-scale="1.1"
+          >
             <img src="../assets/img/joker-card.png" alt="Joker Card" />
           </div>
         </div>
@@ -35,5 +39,15 @@
       type="text/javascript"
       src="../assets/js/bootstrap.bundle.min.js"
     ></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/vanilla-tilt.min.js"
+    ></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".j-card"), {
+        max: 25,
+        speed: 400,
+      });
+    </script>
   </body>
 </html>
