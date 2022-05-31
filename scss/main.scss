@@ -17,6 +17,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+nav {
+    position: absolute;
+    width: 100%;
+    padding: .5em;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    .logo {
+    }
+    img {
+        width: 3em; 
+        margin: 1em;
+    }
+    div {
+        font-size: 2em;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+    }
+}
 .hero {
     background: $color-bg;
     .menu {
