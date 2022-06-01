@@ -17,6 +17,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+// NAVIGATION
 nav {
     position: absolute;
     width: 100%;
@@ -42,12 +43,36 @@ nav {
         color: #fff;
     }
 }
+@media only screen and (max-width: 800px) {
+    nav {
+        img {
+            width: 3em;
+        }
+        div {
+            font-size: 1.5em;
+            font-weight: 400;
+        }
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    nav {
+        img {
+            width: 2em;
+        }
+        div {
+            font-size: .8em;
+            font-weight: 400;
+        }
+    }
+  }
+//   HERO
 .hero {
     background: $color-bg;
     .menu {
         font-family: 'Montserrat', sans-serif;
         position: relative;
-        width: 65%;
+        // width: 65%;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -57,8 +82,10 @@ nav {
             position: relative;
             display: flex;
             flex-direction: column;
+            padding: 0;
             li {
                 list-style: none;
+                padding-bottom: 1em;
                 a {
                     position: relative;
                     display: block;
@@ -106,3 +133,30 @@ nav {
         }
     }
 }
+@media only screen and (max-width: 800px) {
+    .hero {
+        .menu {
+            ul {
+                li {
+                    a {
+                        font-size: 3em;
+                    }
+                }
+            }
+        }
+    }
+}
+  
+  @media only screen and (max-width: 400px) {
+    .hero {
+        .menu {
+            ul {
+                li {
+                    a {
+                        font-size: 2em;
+                    }
+                }
+            }
+        }
+    }
+  }
