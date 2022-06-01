@@ -94,6 +94,10 @@ nav {
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        animation-delay: 0ms;
+        animation-duration: 2000ms;
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
         ul {
             position: relative;
             display: flex;
@@ -142,6 +146,10 @@ nav {
         }
     }
     .j-card {
+        animation-delay: 0ms;
+        animation-duration: 2000ms;
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
         margin: auto;
         padding-left: 3em;
         img {
@@ -192,3 +200,4 @@ nav {
         }
     }
   }
+  @import 'libs/animations'
