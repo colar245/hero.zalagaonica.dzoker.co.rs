@@ -22,6 +22,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+	overflow-x: hidden;
+}
+body {
+	font-family: $font-sans-serif;
+	line-height: 1.8;
+	font-size: 16px;
+	background: $white;
+	color: lighten(#545d61, 20%);
+}
+a {
+	transition: .3s all ease;
+	color: $color-primary;
+	&:hover {
+		text-decoration: none;
+		color: $color-primary;
+	}
+}
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+	line-height: 1.45;
+	font-weight: normal;
+	color: $black;
+}
+.text-primary {
+	color: $color-primary!important;
+}
+// @import 'libs/ftco';
 // NAVIGATION
 nav {
     position: absolute;
@@ -44,22 +72,11 @@ nav {
     div {
         font-size: 2em;
         font-weight: 500;
-        font-family: 'Montserrat', sans-serif;
-        color: #fff;
+        font-family: $font-title;
+        color: $white;
     }
 }
-@media only screen and (max-width: 1200px) {
-    nav {
-        img {
-            width: 3em;
-        }
-        div {
-            font-size: 1.7em;
-            font-weight: 400;
-        }
-    }
-  }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: $xl) {
     nav {
         img {
             width: 3em;
@@ -70,8 +87,19 @@ nav {
         }
     }
   }
+@media only screen and (max-width: $md) {
+    nav {
+        img {
+            width: 3em;
+        }
+        div {
+            font-size: 1em;
+            font-weight: 400;
+        }
+    }
+  }
   
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: $sm) {
     nav {
         img {
             width: 2em;
@@ -86,7 +114,7 @@ nav {
 .hero {
     background: $color-bg;
     .menu {
-        font-family: 'Montserrat', sans-serif;
+        font-family: $font-title;
         position: relative;
         // width: 65%;
         height: 100vh;
@@ -112,7 +140,7 @@ nav {
                     text-decoration: none;
                     text-transform: uppercase;
                     font-size: 4em;
-                    color: #fff;
+                    color: $white;
                     font-weight: 700;
                     transition: 500ms;
                 }
@@ -127,15 +155,15 @@ nav {
                     pointer-events: none;
                     z-index: 1;
                     font-size: .35em;
-                    color: $color-primary-l;
+                    color: $color-primary;
                     font-weight: 500;
                     letter-spacing: 100px;
                     white-space:nowrap;
                     opacity: 0;
                     transition: 500ms;
-                    text-shadow: 0 0 10px $color-primary-l,
-                    0 0 30px $color-primary-l,
-                    0 0 80px $color-primary-l;
+                    text-shadow: 0 0 10px $color-primary,
+                    0 0 30px $color-primary,
+                    0 0 80px $color-primary;
                 }
                 a:hover::before {
                     letter-spacing: 6px;
@@ -155,6 +183,16 @@ nav {
         img {
             max-width: 100%;
         }
+    }
+    .home-content__line {
+        display: block;
+        padding: 0;
+        width: 2px;
+        height: 7.2rem;
+        background-color: $color-primary;
+        position: absolute;
+        right: 7.2rem;
+        bottom: 0;
     }
 }
 @media only screen and (max-width: 1200px) {
