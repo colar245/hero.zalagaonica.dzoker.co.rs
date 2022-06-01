@@ -43,6 +43,17 @@ nav {
         color: #fff;
     }
 }
+@media only screen and (max-width: 1200px) {
+    nav {
+        img {
+            width: 3em;
+        }
+        div {
+            font-size: 1.7em;
+            font-weight: 400;
+        }
+    }
+  }
 @media only screen and (max-width: 800px) {
     nav {
         img {
@@ -130,6 +141,19 @@ nav {
         padding-left: 3em;
         img {
             max-width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .hero {
+        .menu {
+            ul {
+                li {
+                    a {
+                        font-size: 3.5em;
+                    }
+                }
+            }
         }
     }
 }
