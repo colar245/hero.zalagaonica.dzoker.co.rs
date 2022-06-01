@@ -12,6 +12,11 @@
  */
  @import "libs/vars";
 
+/*
+* Preloader
+*/
+@import "libs/preloader";
+
 * {
     margin: 0;
     padding: 0;
@@ -118,15 +123,15 @@ nav {
                     pointer-events: none;
                     z-index: 1;
                     font-size: .35em;
-                    color: $color-title;
+                    color: $color-primary-l;
                     font-weight: 500;
                     letter-spacing: 100px;
                     white-space:nowrap;
                     opacity: 0;
                     transition: 500ms;
-                    text-shadow: 0 0 10px $color-title,
-                    0 0 30px $color-title,
-                    0 0 80px $color-title;
+                    text-shadow: 0 0 10px $color-primary-l,
+                    0 0 30px $color-primary-l,
+                    0 0 80px $color-primary-l;
                 }
                 a:hover::before {
                     letter-spacing: 6px;

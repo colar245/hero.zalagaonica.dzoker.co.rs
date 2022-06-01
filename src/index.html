@@ -50,6 +50,18 @@
         </div>
       </div>
     </div>
+    <!-- preloader -->
+    <div id="preloader">
+      <div id="loader">
+        <div class="line-scale-pulse-out">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
     <!-- Bootstrap -->
     <script
       type="text/javascript"
@@ -59,6 +71,16 @@
       type="text/javascript"
       src="../assets/js/vanilla-tilt.min.js"
     ></script>
+    <script>
+      document.body.onload = function () {
+        setTimeout(function () {
+          var preloader = document.getElementById("preloader");
+          if (!preloader.classList.contains("done")) {
+            preloader.classList.add("done");
+          }
+        }, 1000);
+      };
+    </script>
     <script type="text/javascript">
       VanillaTilt.init(document.querySelector(".j-card"), {
         max: 25,
