@@ -195,20 +195,7 @@ nav {
         bottom: 0;
     }
 }
-@media only screen and (max-width: 1200px) {
-    .hero {
-        .menu {
-            ul {
-                li {
-                    a {
-                        font-size: 3.5em;
-                    }
-                }
-            }
-        }
-    }
-}
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: $xl) {
     .hero {
         .menu {
             ul {
@@ -219,10 +206,26 @@ nav {
                 }
             }
         }
+        .j-card {
+            padding: 0;
+        }
+    }
+}
+@media only screen and (max-width: $md) {
+    .hero {
+        .menu {
+            ul {
+                li {
+                    a {
+                        font-size: 2.5em;
+                    }
+                }
+            }
+        }
     }
 }
   
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: $sm) {
     .hero {
         .menu {
             ul {
